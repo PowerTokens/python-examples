@@ -12,7 +12,7 @@ Make this the best “PowerTokens + Python” entry for search and first-run suc
 python-examples/
 ├── README.md
 ├── chat/
-│   ├── minimax_m3.py      # already in README as primary
+│   ├── minimax_m3.py
 │   ├── qwen3_max.py
 │   └── glm_5_2.py
 ├── video/                 # later
@@ -31,7 +31,7 @@ python-examples/
 
 ## Done when
 
-- [ ] Second chat example added (Qwen or GLM)
-- [ ] README table of examples
-- [ ] Topics remain intent-specific (python / openai-api / llm)
+- [x] Second chat example added (Qwen or GLM)
+- [x] README table of examples
+- [x] Topics remain intent-specific (python / openai-api / llm)
 - [ ] Optional: one video example once docs path is confirmed
