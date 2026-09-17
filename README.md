@@ -2,16 +2,17 @@
 
 Python examples for building AI applications with the **PowerTokens unified AI API**.
 
-PowerTokens provides an OpenAI-compatible API for accessing multiple AI model families through one API endpoint.
+**Unified API for video, image, audio, and LLMs — no Chinese account required.** OpenAI-compatible.
 
 [Get started](https://www.powertokens.ai/?utm_source=github&utm_medium=readme&utm_campaign=sdk-python) · [Docs](https://docs.powertokens.ai/en/guides/powertokens-quickstart?utm_source=github&utm_medium=readme&utm_campaign=sdk-python) · [Models](https://www.powertokens.ai/en/models?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
 
-## What you can build
+## Examples
 
-- LLM and chat applications
-- AI agents and developer tools
-- Multi-model applications
-- AI applications that use OpenAI-compatible SDKs
+| Example | Model | Path |
+|---------|-------|------|
+| MiniMax chat | `MiniMax-M3` | [`chat/minimax_m3.py`](chat/minimax_m3.py) |
+| Qwen chat | `qwen3-max` | [`chat/qwen3_max.py`](chat/qwen3_max.py) |
+| GLM chat | `glm-5.2` | [`chat/glm_5_2.py`](chat/glm_5_2.py) |
 
 ## Requirements
 
@@ -27,8 +28,16 @@ pip install openai
 
 ## Quickstart
 
-Base URL for OpenAI-compatible SDKs: `https://api.powertokens.ai/v1`  
-(Platform docs list the host as `https://api.powertokens.ai`; chat calls go to `/v1/chat/completions`.)
+Base URL for OpenAI-compatible SDKs: `https://api.powertokens.ai/v1`
+
+```bash
+export POWERTOKENS_API_KEY=your_key
+python chat/minimax_m3.py
+# or: python chat/qwen3_max.py
+# or: python chat/glm_5_2.py
+```
+
+Equivalent SDK snippet:
 
 ```python
 import os
@@ -40,7 +49,7 @@ client = OpenAI(
 )
 
 resp = client.chat.completions.create(
-    model="MiniMax-M3",  # or qwen3-max, glm-5.2, etc. — see model catalog
+    model="MiniMax-M3",
     messages=[
         {"role": "system", "content": "You are a concise assistant."},
         {"role": "user", "content": "Describe Paris in one sentence."},
@@ -54,14 +63,16 @@ Create an API key in the [dashboard](https://www.powertokens.ai/en/api-keys?utm_
 
 ## Why PowerTokens
 
-- One API: access multiple AI model families through a unified API
+- One API: video, image, audio, and LLM model families
 - OpenAI-compatible: reuse familiar OpenAI SDK patterns
-- Developer-focused: build and test applications without maintaining separate integrations for every provider
+- No Chinese mainland account required
 
 ## Useful links
 
-- Website: https://www.powertokens.ai
-- Documentation: https://docs.powertokens.ai
-- Model catalog: https://www.powertokens.ai/en/models
-- API keys: https://www.powertokens.ai/en/api-keys
+- Website: [powertokens.ai](https://www.powertokens.ai/?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
+- Documentation: [docs.powertokens.ai](https://docs.powertokens.ai/?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
+- Model catalog: [Models](https://www.powertokens.ai/en/models?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
+- API keys: [API keys](https://www.powertokens.ai/en/api-keys?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
 - Discord: https://discord.gg/JtgtRdhJVS
+
+**Get free credits to start building** — [powertokens.ai](https://www.powertokens.ai/?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
