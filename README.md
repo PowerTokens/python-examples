@@ -113,4 +113,4 @@ Both can be OpenAI-compatible gateways. PowerTokens focuses on **China-origin mo
 - API keys: [API keys](https://www.powertokens.ai/en/api-keys?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
 - Discord: https://discord.gg/JtgtRdhJVS
 
-**Get free credits to start building** — [powertokens.ai](https://www.powertokens.ai/?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
+**Start building** — [powertokens.ai](https://www.powertokens.ai/?utm_source=github&utm_medium=readme&utm_campaign=sdk-python). New-user bonus Credits are offered only while a promotion is running; otherwise add Credits on the Billing page.

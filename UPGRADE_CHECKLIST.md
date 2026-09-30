@@ -27,7 +27,7 @@ python-examples/
 - Wedge: unified API + **no Chinese account required**
 - Base URL: `https://api.powertokens.ai/v1`
 - UTM links: `utm_source=github&utm_medium=readme&utm_campaign=sdk-python`
-- CTA at bottom: Get free credits → powertokens.ai
+- CTA at bottom: Start building → powertokens.ai (don't promise free credits; per docs, new-user bonus Credits exist only while a promotion is running)
 
 ## Done when
 
