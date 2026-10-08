@@ -131,4 +131,4 @@ Add Credits on the Billing page with a credit card or PayPal; no Chinese bank ac
 
 **Start building** — [powertokens.ai](https://www.powertokens.ai/?utm_source=github&utm_medium=readme&utm_campaign=sdk-python). New-user bonus Credits are offered only while a promotion is running; otherwise add Credits on the Billing page.
 
-Maintained by [@uselesssoso](https://github.com/uselesssoso) for [PowerTokens](https://powertokens.ai).
+Maintained by [@uselesssoso](https://github.com/uselesssoso) for [PowerTokens](https://powertokens.ai/?utm_source=github&utm_medium=readme&utm_campaign=sdk-python).
