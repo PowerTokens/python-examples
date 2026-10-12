@@ -13,6 +13,8 @@ Python examples for building AI applications with the **PowerTokens unified AI A
 | MiniMax chat | `MiniMax-M3` | [`chat/minimax_m3.py`](chat/minimax_m3.py) |
 | Qwen chat | `qwen3-max` | [`chat/qwen3_max.py`](chat/qwen3_max.py) |
 | GLM chat | `glm-5.2` | [`chat/glm_5_2.py`](chat/glm_5_2.py) |
+| Vidu Q4 preview image-to-video | `viduq4-preview` | [`video/viduq4_preview_image_to_video.py`](video/viduq4_preview_image_to_video.py) |
+| Vidu Q4 preview reference-to-video | `viduq4-preview` | [`video/viduq4_preview_reference_to_video.py`](video/viduq4_preview_reference_to_video.py) |
 
 ## Requirements
 
@@ -35,6 +37,9 @@ export POWERTOKENS_API_KEY=your_key
 python chat/minimax_m3.py
 # or: python chat/qwen3_max.py
 # or: python chat/glm_5_2.py
+# video (Vidu native endpoints; submits a task and polls):
+# python video/viduq4_preview_image_to_video.py
+# python video/viduq4_preview_reference_to_video.py
 ```
 
 ```python
@@ -109,7 +114,7 @@ No. One PowerTokens API key works for every model in the catalog, with no per-mo
 
 ### Does PowerTokens work with Claude Code or Codex?
 
-Yes. Besides OpenAI Chat Completions (`/v1/chat/completions`), PowerTokens serves the Anthropic Messages format (`/v1/messages`) used by Claude Code and the OpenAI Responses format (`/v1/responses`) used by Codex; GLM models are not available on the Responses path ([protocol guide](https://docs.powertokens.ai/en/ecosystem-tools/text-model-protocols?utm_source=github&utm_medium=readme&utm_campaign=faq)). The docs have setup guides for [Claude Code](https://docs.powertokens.ai/en/ecosystem-tools/claude-code?utm_source=github&utm_medium=readme&utm_campaign=faq), [opencode](https://docs.powertokens.ai/en/ecosystem-tools/opencode?utm_source=github&utm_medium=readme&utm_campaign=faq), [Kilo Code](https://docs.powertokens.ai/en/ecosystem-tools/kilo-code?utm_source=github&utm_medium=readme&utm_campaign=faq), [Hermes Agent](https://docs.powertokens.ai/en/ecosystem-tools/hermes-agent?utm_source=github&utm_medium=readme&utm_campaign=faq) and [OpenClaw](https://docs.powertokens.ai/en/ecosystem-tools/openclaw?utm_source=github&utm_medium=readme&utm_campaign=faq).
+Yes. Besides OpenAI Chat Completions (`/v1/chat/completions`), PowerTokens serves the Anthropic Messages format (`/v1/messages`) used by Claude Code and the OpenAI Responses format (`/v1/responses`) used by Codex; GLM models are not available on the Responses path ([protocol guide](https://docs.powertokens.ai/en/ecosystem-tools/text-model-protocols?utm_source=github&utm_medium=readme&utm_campaign=faq)). The docs have setup guides for [Claude Code](https://docs.powertokens.ai/en/ecosystem-tools/claude-code?utm_source=github&utm_medium=readme&utm_campaign=faq), [opencode](https://docs.powertokens.ai/en/ecosystem-tools/opencode?utm_source=github&utm_medium=readme&utm_campaign=faq), [Kilo Code](https://docs.powertokens.ai/en/ecosystem-tools/kilo-code?utm_source=github&utm_medium=readme&utm_campaign=faq), [Hermes Agent](https://docs.powertokens.ai/en/ecosystem-tools/hermes-agent?utm_source=github&utm_medium=readme&utm_campaign=faq), [OpenClaw](https://docs.powertokens.ai/en/ecosystem-tools/openclaw?utm_source=github&utm_medium=readme&utm_campaign=faq) and [WorkBuddy](https://docs.powertokens.ai/en/ecosystem-tools/workbuddy?utm_source=github&utm_medium=readme&utm_campaign=faq). For apps and the terminal, see also [Vercel AI SDK](https://docs.powertokens.ai/en/guides/vercel-ai-sdk?utm_source=github&utm_medium=readme&utm_campaign=faq) and [PowerTokens CLI](https://docs.powertokens.ai/en/guides/powertokens-cli?utm_source=github&utm_medium=readme&utm_campaign=faq).
 
 ### How do I pay for PowerTokens?
 
@@ -127,6 +132,7 @@ Add Credits on the Billing page with a credit card or PayPal; no Chinese bank ac
 - Documentation: [docs.powertokens.ai](https://docs.powertokens.ai/?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
 - Model catalog: [Models](https://www.powertokens.ai/en/models?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
 - API keys: [API keys](https://www.powertokens.ai/en/api-keys?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
+- [Vercel AI SDK](https://docs.powertokens.ai/en/guides/vercel-ai-sdk?utm_source=github&utm_medium=readme&utm_campaign=sdk-python) · [PowerTokens CLI](https://docs.powertokens.ai/en/guides/powertokens-cli?utm_source=github&utm_medium=readme&utm_campaign=sdk-python) · [WorkBuddy](https://docs.powertokens.ai/en/ecosystem-tools/workbuddy?utm_source=github&utm_medium=readme&utm_campaign=sdk-python)
 - Discord: https://discord.gg/JtgtRdhJVS
 
 **Start building** — [powertokens.ai](https://www.powertokens.ai/?utm_source=github&utm_medium=readme&utm_campaign=sdk-python). New-user bonus Credits are offered only while a promotion is running; otherwise add Credits on the Billing page.
